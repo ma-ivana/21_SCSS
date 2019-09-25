@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro:300,400,600&display=swap');
+
+$color1: #7452a3;
+$color2: #99f7e2;
+$colorP: #fff;
+$color3: #060606;
+$color4: #67b3ff;
+$fuente1: 'Source Sans Pro', sans-serif;
+$fuente2: 'Libre Baskerville', serif;
+$paddingSides: 10%;
+$lineHeight1_5: 1.5;
+$lineHeight2: 2;
+
+body {
+  background-color: $color1;
+}
+
+nav {
+  padding-left: $paddingSides;
+  padding-right: $paddingSides;
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  div h1 {
+    padding: 0;
+    font-family: $fuente1;
+    color: $color2;
+    font-size: 36px;
+    font-weight: 400;
+  }
+}
+
+.main {
+  padding-top: 210px;
+  padding-left: $paddingSides;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  section {
+    flex: 1;  
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    h3 {
+      font-family: $fuente1;
+      color: $color2;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: $lineHeight1_5;
+    }
+    p {
+      font-family: $fuente1;
+      color: $colorP;
+      font-size: 18px;
+      line-height: 2;
+      font-weight: 300;
+    }
+  }
+
+  aside {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+}
+
+.mouse {
+    padding-bottom: 70px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+.white {
+  background-color: $colorP;
+  padding-top: 250px;
+  padding-right: $paddingSides;
+  font-family: $fuente1;
+  line-height: $lineHeight2;
+  display: flex;
+
+  aside {
+    display: flex;
+    flex: 1;
+  }  
+  section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 3%;
+    h3 {
+      color: $color1;
+      font-size: 45px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: $color3;
+    }
+
+    a {
+      color: $color4;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+}
